@@ -3,8 +3,12 @@ m = []
 for i in range(5):
     x = input().split()
     x = list(map(int, x))
-    for j in x:
-        m.append(j)
+    m.append(x)
 
-one = m.index(1)
-print(13 - (one+1))
+for i in range(5):
+    for j in range(5):
+        if m[i][j] == 1:
+            t = abs(i - 2) + abs(j - 2)
+            break
+
+print(t)
