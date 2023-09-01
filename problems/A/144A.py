@@ -1,8 +1,15 @@
-n = int(input())
-line = input().split()
+n = input()
+line = list(map(int, input().split()))
 
-seconds = 0
-
-index_min = line.index(min(line))
-index_max = line.index(max(line))
-
+minimum = min(line)
+maximum = max(line)
+count = line.index(maximum)
+print(count, line)
+line.pop(count)
+print(line)
+line.insert(0, count)
+print(line)
+line.reverse()
+print(line)
+count += line.index(minimum)
+print(count)
