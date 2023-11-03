@@ -8,3 +8,4 @@ sections_vertical = (m + a - 1) // a
 total_tiles = sections_horizontal * sections_vertical
 
 print(total_tiles)
+print(total_tiles)
